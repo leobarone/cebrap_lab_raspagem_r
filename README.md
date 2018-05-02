@@ -3,7 +3,7 @@
 ## Informações básicas
 
 ### Instrutor: 
-
+	
 Leonardo S. Barone
 
 ### Data, Hora e Local
@@ -16,11 +16,11 @@ De 14 a 18 de Maio de 2018, das 9h às 13h, no auditório do CEBRAP
 
 ## Roteiros, calendário e tutoriais
 
-- [14/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180514.md) - Introdução ao curso e R Básico
-- [15/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180515.md) - Do básico ao intermediário
-- [16/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180516.md)- Manipulação de dados no R
-- [17/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180517.md) - Visualização de dados e a gramática de gráficos _ggplot2_
-- [18/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180518.md) - Desafios
+- [14/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180514.md) - O básico da captura de páginas com R - páginas com tabelas
+- [15/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180515.md) - O básico da captura de páginas com R - portais de notícias
+- [16/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180516.md)- Tópicos de captura de dados - Formulários web, twitter, facebook e .pdf
+- [17/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180517.md) - Mineração de texto com R - uma introdução breve
+- [18/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180518.md) - Desafios de raspagem de dados
 
 ## Referências bibliográficas 
 
