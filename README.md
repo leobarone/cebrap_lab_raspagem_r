@@ -11,8 +11,10 @@ Leonardo S. Barone
 De 14 a 18 de Maio de 2018, das 9h às 13h, no auditório do CEBRAP
 
 ## Apresentação
+O curso oferece uma introdução à captura de dados na Internet usando a linguagem R. Por meio de exercícios práticos, os participantes aprenderão estratégias de captura de páginas simples de internet, como páginas de Legislativos brasileiros e/ou de jornais com a finalidade de construir bases de dados úteis à pesquisa em ciências sociais. O curso contempla ainda uma rápida introdução ao uso de APIs de redes sociais [Twitter e Facebook] usando R. O requisito para participar do curso é ter tido exposição prévia à linguagem R ou realizar um tutorial de preparação antes do início das aulas.
 
 ## Requisitos
+Ter tido exposição prévia à linguagem R e ao ambiente de trabalho do RStudio.
 
 ## Roteiros, calendário e tutoriais
 
