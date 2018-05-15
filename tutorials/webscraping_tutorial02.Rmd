@@ -218,22 +218,16 @@ Nosso objetivo é construir um vetor com os links dos resultados. Em qualquer p�
 
 Entretanto, há diversos outros elementos "clicáveis" na página além dos links que nos interessam -- por exemplo, as barras laterais, o banner com os logotipos, os links do mapa do portal, etc. Precisamos, portanto, especificar bem o "caminho" para que obtivéssemos apenas os links que nos interessam.
 
-Infelizmente não temos tempo para aprender aprofundadamente HTML, mas podemos usar lógica e intuição para obter caminhos unívocos. Neste exemplo, todos as "tags" "a" que nos interessam são filhas de alguma tag "h3" (que, em html, define o tamanho dos caracteres do título), que por sua vez é filha de "li" (que é abreviação de "list" e indica um único elemento de uma lista). Podemos melhorar nosso caminho:
+Infelizmente não temos tempo para aprender aprofundadamente HTML, mas podemos usar lógica e intuição para obter caminhos unívocos. Neste exemplo, todos as "tags" "a" que nos interessam são filhas de alguma tag "div", que por sua vez é filha de outra "div", esta filha de "li" (que é abreviação de "list" e indica um único elemento de uma lista). Podemos melhorar nosso caminho:
 
 ```{html}
-//h3/a
-```
-
-ou, mais especificamente,
-
-```{html}
-//li/h3/a
+//li/div/div/a
 ```
 
 A tag li, por sua vez, é filha da tag "ol" ("ordered list"), ou seja, é a tag que dá início à lista não ordenada formada pelos elementos "li". Novamente, melhoramos nosso caminho:
 
 ```{html}
-//ol/li/h3/a
+//ol/li/div/div//a
 ```
 
 E se houver mais de uma "ordered list" na página? Observe que essa tag "ul" tem atributos: class="search-results-title". Bem específico, não?
@@ -245,13 +239,7 @@ As tags mais comum em páginas HTML são: head, body, div, p, a, table, tbody, t
 Voltando ao nosso exemplo, se usarmos o atributo para especificar o "caminho" para os links teremos:
 
 ```{html}
-//ol[@class='search-results-title'/li/h3/a
-```
-
-Poderíamos subir um nível hierárquico para melhorar o "caminho":
-
-```{html}
-//div[@class='search-results']/ol[@class='search-results-title'/li/h3/a
+//ol[@class='u-list-unstyled c-search'/li/div/div/a
 ```
 
 Pegou o espírito? Vamos agora dar o nome correto a este "caminho": xPath.
@@ -285,8 +273,10 @@ Voltando ao nosso exemplo da busca na Folha de São Paulo, vamos obter os títul
 
 Em primeiro lugar, com o caminho do título e a função _html\_nodes_, extraímos os "nodes" com as "tags" que nos interessam:
 
+Obs: como o título está dentro de uma tag "h2" dentro da tag "a", adicionamos o h2 no final do caminho.
+
 ```{r}
-nodes_titulos <- html_nodes(pagina, xpath = "//h3/a")
+nodes_titulos <- html_nodes(pagina, xpath = "//ol/li/div/div/a/h2")
 ```
 
 Use a função "print" para observar o que capturamos.
@@ -295,7 +285,7 @@ Agora, tendo apenas os "nodes" que nos interessam por conter os títulos das not
 
 ```{r}
 titulos <- html_text(nodes_titulos)
-print(titulos)
+View(titulos)
 ```
 
 E a função _html\_attr_ para extrair os atributos "href", que contêm os títulos das notícias:
