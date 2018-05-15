@@ -55,7 +55,7 @@ pagina <- read_html(url_pesquisa)
 Escolhemos apenas os "nodes" que nos interessam:
 
 ```{r}
-nodes_titulos <- html_nodes(pagina, xpath = "//h3/a")
+nodes_titulos <- html_nodes(pagina, xpath = "//ol/li/div/div/a")
 ```
 
 Extraímos os títulos e os links com as funções apropriadas:
@@ -100,7 +100,7 @@ for (i in 1:151){
   
   pagina <- read_html(url_pesquisa)
   
-  nodes_titulos <- html_nodes(pagina, xpath = "//h3/a")
+  nodes_titulos <- html_nodes(pagina, xpath = "//ol/li/div/div/a")
   
   titulos <- html_text(nodes_titulos)
   links <- html_attr(nodes_titulos, name = "href")
