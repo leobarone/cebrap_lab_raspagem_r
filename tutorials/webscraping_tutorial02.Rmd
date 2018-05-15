@@ -276,7 +276,7 @@ Em primeiro lugar, com o caminho do título e a função _html\_nodes_, extraím
 Obs: como o título está dentro de uma tag "h2" dentro da tag "a", adicionamos o h2 no final do caminho.
 
 ```{r}
-nodes_titulos <- html_nodes(pagina, xpath = "//ol/li/div/div/a/h2")
+nodes_titulos <- html_nodes(pagina, xpath = "//ol/li/div/div/a")
 ```
 
 Use a função "print" para observar o que capturamos.
