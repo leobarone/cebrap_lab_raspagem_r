@@ -164,8 +164,6 @@ tabela_processos$links <- links_processos
 
 Excelente! Podemos escolher o  link de um processo usando a tabela (ADI, por exemplo):
 
-OBS: Na rede da UFMG este pedaço do código pode não funcionar por questões que extrapolam o escopo do tutorial. Comentarem em aula.
-
 ```{r}
 link_adi <- tabela_processos$links[str_detect(tabela_processos$Processo, "ADI")]
 ```
