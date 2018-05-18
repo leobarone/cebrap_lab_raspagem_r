@@ -27,15 +27,25 @@ Ter tido exposição prévia à linguagem R e ao ambiente de trabalho do RStudio
 ## Tutoriais
 
 [Tutorial 1](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial01.Rmd) - Páginas com tabelas
+
 [Tutorial 2](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial02.Rmd) - Introdução ao XPath
+
 [Tutorial 3](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial03.Rmd) - Captura de notícias da Folha
+
 [Tutorial 4](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial04.Rmd) - Captura de notícias do Data Folha
+
 [Tutorial 5](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial05.Rmd) - Mineração de Texto - pacote stringr
+
 [Tutorial 6](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial06.Rmd) - Mineração de Texto - pacote tm
+
 [Tutorial 7](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial07.Rmd) - Mineração de Texto - pacote tidytext
+
 [Tutorial 8](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial08.Rmd) - Formulários na web
+
 [Tutorial 9](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial09.Rmd) - Twitter
+
 [Tutorial 10](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial10.Rmd) PDF
+
 [Tutorial 11](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial11.Rmd) - Facebook
 
 ### Referências
