@@ -21,8 +21,8 @@ Ter tido exposição prévia à linguagem R e ao ambiente de trabalho do RStudio
 - [14/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180514.md) - O básico da captura de páginas com R - páginas com tabelas
 - [15/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180515.md) - O básico da captura de páginas com R - portais de notícias
 - [16/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180516.md)- Tópicos de captura de dados - Formulários web, twitter, facebook e .pdf
-- [17/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180517.md) - Mineração de texto com R - uma introdução breve
-- [18/05/2018](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/roteiros/roteiro20180518.md) - Desafios de raspagem de dados
+- [17/05/2018] - Mineração de texto com R - uma introdução breve
+- [18/05/2018] - Desafios de raspagem de dados
 
 ## Tutoriais
 
@@ -44,7 +44,7 @@ Ter tido exposição prévia à linguagem R e ao ambiente de trabalho do RStudio
 
 [Tutorial 9](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial09.Rmd) - Twitter
 
-[Tutorial 10](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial10.Rmd) PDF
+[Tutorial 10](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial10.Rmd)- PDF
 
 [Tutorial 11](https://github.com/leobarone/cebrap_lab_raspagem_r/blob/master/tutorials/webscraping_tutorial11.Rmd) - Facebook
 

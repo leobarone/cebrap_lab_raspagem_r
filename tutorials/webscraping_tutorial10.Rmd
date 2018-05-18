@@ -109,7 +109,7 @@ for (u in urls_pecs) {
 Temos, assim, dois vetores de tamanho 10, um com os números e outro com os textos das 10 PECs. Vamos organizá-los em um data frame.
 
 ```{r}
-df_pec <- data.frame(num_pec, texto_pec)
+df_pec <- data.frame(nomes_pecs, texto_pecs)
 ```
 
 Pronto! Os próximos passos lógicos seriam extrair o que nos interessa dos textos (justificação? texto legal? cabeçalho?) com o pacote _stringr_ e produzir análises. Você pode ler como fazer isso nos tutoriais sobre mineração de texto.
