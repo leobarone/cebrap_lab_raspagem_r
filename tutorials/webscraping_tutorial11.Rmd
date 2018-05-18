@@ -97,13 +97,25 @@ View(page)
 
 O argumento "feed" incluirá na busca as postagens feitas por outros usuários na página. Finalmente, "reactions" incluirá variáveis detalhadas sobre cada reação em vez da simples contagem.
 
-O funcionamnto de _getGroups_ é bastante semelhante. No exemplo abaixo, vamos pegar as postagens da comunidade brasileira de pessoas que programam em R., [aqui](https://www.facebook.com/groups/1410023525939155/). Veja que o "nome do usuário" de um grupo é um número, e deve ser incluído no argumento "group_id":
+O funcionamnto de _getComments_ é bastante semelhante. No exemplo abaixo, vamos pegar os comentários a uma postagem da página da qual acabamos de obter as postagens. Em primeiro lugar, vamos selecionar o id da primeira postagem usando os dados acima capturados:
 
 ```{r}
-group <- getGroup(group_id = "1410023525939155",
-                  token = token_acesso,
-                  n = 100)
-View(group)
+id_postagem <- page@id[1]
 ```
 
-_getGroups_ também aceita os argumentos "since", "until" e "feed", mas não o argumento "reactions".
+A seguir, vamos obter os dados sobre a primeira postagem
+
+```{r}
+post <- getPost(post = id_postagem,
+                  token = token_acesso)
+str(post)
+```
+
+Note que uma postagem é uma lista. Na primeira posição da lista, temos as informações sobre o post e na segunda os comentários ao post. Vamos separar os comentários em um objeto a parte:
+
+```{r}
+comments <- post$comments
+View(comments)
+```
+
+Finalmente, se quisermos podemos usar a função _getCommentReplies_ para observar os replies a cada um dos comentários.
